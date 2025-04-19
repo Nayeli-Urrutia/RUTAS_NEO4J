@@ -1,0 +1,77 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    height: 100vh;
+    overflow: hidden;
+    border: 20px solid #723000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+h1 {
+    color: #2d3436;
+    font-size: 2.5em;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa-imagen {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.back-button {
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background-color: #0062cc;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(9, 132, 227, 0.3);
+}
+
+@media (max-height: 800px) {
+    .container {
+        gap: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .mapa-imagen {
+        max-width: 500px;
+    }
+}

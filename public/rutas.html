@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutas Guatemala</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>RUTAS ENTRE DEPARTAMENTOS</h1>
+        <div class="card">
+            <div class="form-container">
+                <div class="select-wrapper">
+                    <label for="origen">Origen</label>
+                    <select id="origen">
+                        <option value="">Seleccione origen</option>
+                    </select>
+                </div>
+                <div class="select-wrapper">
+                    <label for="destino">Destino</label>
+                    <select id="destino">
+                        <option value="">Seleccione destino</option>
+                    </select>
+                </div>
+                <button onclick="buscarRuta()">Buscar Ruta</button>
+            </div>
+        </div>
+        <div id="resultado" class="hidden"></div>
+        <button onclick="verMapa()" class="mapa-button">Mapa</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
